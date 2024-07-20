@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "ProxyAuthenticator",
+  "description": "Auto credentials filling for proxy. For automated testing purpose.",
+  "author": "Nguyen Chinh",
+  "background": {
+    "persistent": true,
+    "scripts": [ "main.js" ]
+  },
+  "browser_action" : {
+    "default_icon": "icon.svg"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "offline_enabled": true,
+  "permissions": [ "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ]
+}
